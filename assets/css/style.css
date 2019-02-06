@@ -150,6 +150,7 @@ body {
   
   .work img {
     width: 100%;
+    height: auto;
     border: 0 none;
     opacity: 0.8;
   }
@@ -207,35 +208,101 @@ body {
     height: 200px;
   }
   
-  input[type=submit] {
-    padding: 10px 30px;
-    font-size: 18px;
-    color: #ffffff;
-    cursor: pointer;
-    background: #4aaaa5;
-    border: 0 none;
-  }
+  
   
 
 /*for mobile*/
-@media screen and (max-width: 640px) {
-    #container {
-        border-color: #111;
-        border-width: 1px;
-        margin: auto;
-        width: auto;
-        background-color: #ffffff;
-    }
+@media (max-width: 640px) {
+  #masthead {
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+    margin: 0 0 30px;
+    overflow: auto;
+    color: #ffffff;
+    background: #ffffff;
+    border-bottom: 2px solid #cccccc;
+  }
+  
+  #logo {
+    margin:auto;
+    float: none;
+    width: 100%;
+    height: 90px;
+    font-family: Georgia, Times, "Times New Roman", serif;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 90px;
+    color: #ffffff;
+    text-align: center;
+    text-decoration: none;
+    background: #4aaaa5;
+  }
+  
+  nav {
+    float: right;
+    margin-top: 25px;
+    margin-left: 25vw;
+    margin-right: 25vw;
+  }
+  
+  nav a {
+    text-align: center;
+    display: inline-block;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-left: 5px;
+    line-height: 18px;
+    color: #999;
+    text-decoration: none;
+    border-left: 1px solid #efefef;
+  }
+  
+  nav a:first-child {
+    border-left: 0 none;
+  }
+  
+  .work {
+    position: relative;
+    float: left;
+    width: 100%;
+    margin: auto;
+    overflow: auto;
+  }
+  .work:nth-child(even) {
+    margin-right: auto;
+  }
 }
 
 
 /*for tablets*/
 @media screen and (max-width: 768px) {
-   
+#logo {
+  width: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.work {
+  position: relative;
+  float: left;
+  width: 100%;
+  margin: auto;
+  overflow: auto;
+}
 }
 
 
 /*for Desktops*/
 @media screen and (max-width: 980px) {
-   
+  #logo {
+    width: 300px;
+  }
+  .work {
+    position: relative;
+    float: left;
+    width: auto;
+    margin: auto;
+    overflow: auto;
+  }
 }
+
