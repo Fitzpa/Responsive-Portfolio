@@ -14,9 +14,8 @@ body {
 /* general */
 
 .container {
-  width: 100%;
-  max-width: 960px;
-  margin: 0 auto;
+  width: 70%;
+  margin: auto;
   clear: both;
 }
 
@@ -124,14 +123,15 @@ h3, h2 {
 }
 
 #main-container {
+  
+  margin: auto;
   padding-top: 130px;
   min-height: calc(100vh - 70px);
 }
 
 .main-section {
-  
+  display: inline-block;
   width: 100%;
-  max-width: 960px;
   padding: 30px;
   margin: 0 0 40px;
   background: #ffffff;
@@ -144,7 +144,7 @@ h3, h2 {
   position: relative;
   float: left;
   width: 274px;
-  margin: 20px 0 25px;
+  margin: 20px;
   overflow: auto;
 }
 
@@ -185,6 +185,7 @@ h3, h2 {
 
 #contact-form ul {
   margin-bottom: 20px;
+  width: 100%;
 }
 
 #contact-form li {
